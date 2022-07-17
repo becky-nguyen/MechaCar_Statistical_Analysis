@@ -22,3 +22,11 @@ Yes - R-squared is 0.7149. It is showing for a strong correlation, which means t
 
 Overall, the suspension coils do not exceed 100 pounds per square inch. However, when you look at the lots, you can see that lot 3 does exceed that design specification (showing a variance of 170.286), while lots 1 and 2 are under (.980 and 7.470 respectively). 
 
+
+## T-Tests on Suspension Coils
+![suspension_coil t-test](https://user-images.githubusercontent.com/100896787/179379644-0e220d8c-5778-4a96-bb07-59cf28dee59b.PNG)
+
+With a p-value of 0.06028, there is no statistical difference between all of the samples and a population mean of 1500 pounds per square inch.
+![suspension_coil t-tests per lots](https://user-images.githubusercontent.com/100896787/179379646-9dd6dcbd-6ebc-4a28-9fdc-befc87417191.PNG)
+
+When breaking it down by lots, we can see again that lot 3 is standing out. Both lots 1 and 2 have p-values greater than .05, meaning they are not statistically different from a population mean of 1500. Lot 3 is the only lot with a p-value less than .05, which suggests that its mean is different from the population mean. 
