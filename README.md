@@ -30,3 +30,36 @@ With a p-value of 0.06028, there is no statistical difference between all of the
 ![suspension_coil t-tests per lots](https://user-images.githubusercontent.com/100896787/179379646-9dd6dcbd-6ebc-4a28-9fdc-befc87417191.PNG)
 
 When breaking it down by lots, we can see again that lot 3 is standing out. Both lots 1 and 2 have p-values greater than .05, meaning they are not statistically different from a population mean of 1500. Lot 3 is the only lot with a p-value less than .05, which suggests that its mean is different from the population mean. 
+
+## Study Design: MechaCar vs Competition
+To compare MechaCar to other competitors, we should consider what is high priority for consumers these days. With electric vehicles becoming more popular, it would be good to think critically about fuel efficiency, cost, and safety ratings. 
+1) What metric or metrics are you going to test?
+The metrics we'd be testing for is fuel efficiency (comparing how efficient MechaCar is to other vehicles that require fuel), cost (of fuel vs electric charging), and safety ratings. 
+2) What is the null hypothesis and alternative hypothesis?
+
+Fuel Efficiency
+
+  Null: MechaCar's average fuel usage is equal to that of the average fuel-powered vehicle. 
+
+  Alternative: MechaCar's average fuel usage is not equal to that of the average fuel-powered vehicle. 
+
+Cost
+
+  Null: The average weekly cost of fuel is equal to the average weekly cost of electric charging. 
+  
+  Alternative: The average weekly cost of fuel is not equal to the average weekly cost of electric charging. 
+
+Safety
+
+  Null: Safety rating is 0
+
+  Alternative: Safety rating is not 0
+
+3) What statistical test would you use to test the hypothesis and why?
+We would use a one-sample t-test for the fuel efficiency test (comparing the cost of MechaCar's fuel efficiency to the overall population of fueled vehicles), two-sample t-test for the cost (comparing the means of two samples - fuel and electric vehicles), and ANOVA for safety (comparing the safety ratings of MechaCar to other fueled and electric vehicles). 
+
+4) What data is needed to run the statistical test?
+* Fuel efficiency of other competitors
+* Costs of fuel per week 
+* Costs of electric charging per week 
+* Safety ratings of other competitors 
